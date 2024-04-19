@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".registro">
+
+    <TextView
+        android:id="@+id/letrero3"
+        android:layout_width="345dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="right"
+        android:text="REGISTRATE NUEVO USUARIO"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="327dp"
+        android:layout_height="550dp"
+        android:background="#B3DCFB"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="283dp"
+            android:layout_height="268dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/logon" />
+
+        <EditText
+            android:id="@+id/contra"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imail"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:autofillHints=""
+            android:background="@drawable/estilo_edit"
+            android:drawableLeft="@drawable/cambio_contrasena_icon"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:fontFamily="@font/architects_daughter"
+            android:hint="@string/contrase_a"
+            android:inputType="textPassword"
+            android:paddingStart="25dp"
+            android:paddingLeft="12dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#9F9F9F"
+            android:textColorLink="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/imail"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:autofillHints=""
+            android:background="@drawable/estilo_edit"
+            android:drawableLeft="@drawable/cambio_correo_icon"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:fontFamily="@font/architects_daughter"
+            android:freezesText="false"
+            android:hint="@string/correo_electronico"
+            android:inputType="textEmailAddress"
+            android:paddingStart="25dp"
+            android:paddingLeft="12dp"
+            android:textColor="#F5000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#9F9F9F"
+            android:textColorLink="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/registrarRe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contra"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="109dp"
+            android:layout_marginRight="109dp"
+            android:text="Registrar"
+            app:backgroundTint="#9C27B0"
+            app:cornerRadius="20dp" />
+    </RelativeLayout>
+    <![CDATA[
+
+
+
+    />
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:backgroundTint="#2196F3"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textID"
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#E91E63"
+                    android:paddingLeft="10dp"
+                    android:text="ID: "
+                    android:textColor="#000000"
+                    android:textSize="18dp"></TextView>
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#E91E63"
+                    android:paddingLeft="10dp"
+                    android:text="ID: "
+                    android:textColor="#000000"
+                    android:textSize="18dp"></TextView>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/texnombre"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textID"
+                android:background="#E91E63"
+                android:paddingLeft="10dp"
+                android:text="Nombre: "
+                android:textColor="#000000"
+                android:textSize="18dp"></TextView>
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id"
+                android:background="#E91E63"
+                android:paddingLeft="10dp"
+                android:text="Nombre: "
+                android:textColor="#000000"
+                android:textSize="18dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/texdom"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Domicilio: "
+                android:textColor="#000000"
+                android:textSize="18dp"></TextView>
+            <TextView
+                android:id="@+id/domicilio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Domicilio: "
+                android:textColor="#000000"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textel"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Telefono: "
+                android:textColor="#000000"
+                android:textSize="18dp"></TextView>
+            <TextView
+                android:id="@+id/tell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Telefono: "
+                android:textColor="#000000"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/texzona"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Zona: "
+                android:textColor="#000000"
+                android:textSize="18dp"></TextView>
+            <TextView
+                android:id="@+id/zona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Zona: "
+                android:textColor="#000000"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/texadeud"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Adeudos: "
+                android:textColor="#000000"
+                android:textSize="18dp"></TextView>
+
+            <TextView
+                android:id="@+id/adeu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Adeudos: "
+                android:textColor="#000000"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

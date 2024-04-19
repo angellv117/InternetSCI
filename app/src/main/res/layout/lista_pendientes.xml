@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:id="@+id/nombrePenlista1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/fastScrollPreviewBackgroundLeft"
+        android:text="Nombre y $$"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"></TextView>
+
+    <TextView
+        android:id="@+id/nombrePenlista2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nombrePenlista1"
+        android:background="?android:attr/fastScrollPreviewBackgroundLeft"
+        android:text="XXXXX"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"></TextView>
+
+    <TextView
+        android:id="@+id/descripcionlista1"
+        android:layout_width="159dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/nombrePenlista1"
+        android:layout_marginTop="4dp"
+        android:background="?attr/dividerVertical"
+        android:gravity="center_vertical"
+        android:text="Descripcion"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/descripcionlista2"
+        android:layout_width="216dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/nombrePenlista2"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/descripcionlista1"
+        android:background="?attr/dividerVertical"
+        android:gravity="center_vertical"
+        android:text="XXXXX"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic">
+
+    </TextView>
+
+</RelativeLayout>

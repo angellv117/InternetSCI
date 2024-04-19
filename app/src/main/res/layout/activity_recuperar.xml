@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".recuperar">
+
+    <TextView
+        android:id="@+id/letrero6"
+        android:layout_width="345dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="right"
+        android:text="RECUPERA TU CONTRASEÑA"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="327dp"
+        android:layout_height="550dp"
+        android:background="#B3DCFB"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="248dp"
+            android:layout_height="215dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/logon" />
+
+        <EditText
+            android:id="@+id/correoRecu"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageView4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:autofillHints=""
+            android:background="@drawable/estilo_edit"
+            android:drawableStart="@drawable/cambio_correo_icon"
+            android:drawableLeft="@drawable/cambio_correo_icon"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:fontFamily="@font/architects_daughter"
+            android:freezesText="false"
+            android:hint="@string/correo_electronico"
+            android:inputType="textEmailAddress"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#9F9F9F"
+            android:textColorLink="#000000"
+            android:textCursorDrawable="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/enviarRecu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/correoRecu"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="86dp"
+            android:layout_marginRight="86dp"
+            android:onClick="recuperar"
+            android:text="Enviar correo"
+            app:backgroundTint="#9C27B0"
+            app:cornerRadius="20dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

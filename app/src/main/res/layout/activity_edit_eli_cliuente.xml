@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".AgregarNota">
+
+    <TextView
+        android:id="@+id/letrero9"
+        android:layout_width="188dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="right"
+        android:text="EDITAR CLIENTE"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="327dp"
+        android:layout_height="550dp"
+        android:background="@drawable/styles_layouts"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495" >
+
+        <EditText
+            android:id="@+id/IDEE"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/estilo_edit"
+            android:drawableLeft="@drawable/cambio_id_icon"
+            android:drawablePadding="12dp"
+            android:hint="ID"
+            android:inputType="number"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+
+            android:textColorHighlight="#000000"
+            android:textColorHint="#9F9F9F"
+            android:textColorLink="#000000"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/nombreCEE"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/imageView5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/estilo_edit"
+            android:drawableLeft="@drawable/cambio_nombre_icon"
+            android:drawablePadding="12dp"
+            android:hint="Nombre"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#9F9F9F"
+            android:textColorLink="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/telCEE"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/imageView5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="159dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/estilo_edit"
+            android:drawableLeft="@drawable/cambio_telefono_icon"
+            android:drawablePadding="12dp"
+            android:hint="Telefono "
+            android:inputType="phone"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#9F9F9F"
+            android:textColorLink="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/planCEE"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/imageView5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="206dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/estilo_edit"
+            android:drawableLeft="@drawable/cambio_plan_icon"
+            android:drawablePadding="12dp"
+            android:hint="Zona"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#9F9F9F"
+            android:textColorLink="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/AdeuCEE"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/imageView5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="251dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/estilo_edit"
+            android:drawableLeft="@drawable/cambio_nota_icon"
+            android:drawablePadding="12dp"
+            android:hint="Adeudos u Observaciones"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#9F9F9F"
+            android:textColorLink="#000000"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/agregarcliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="310dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:onClick="eliminar"
+            android:text="eliminar"
+            app:backgroundTint="#9C27B0"
+            app:cornerRadius="20dp"
+            tools:ignore="OnClick" />
+
+        <EditText
+            android:id="@+id/direcCEE"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/imageView5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="109dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/estilo_edit"
+            android:drawableLeft="@drawable/cambio_dierccion_icon"
+            android:drawablePadding="12dp"
+            android:hint="Direccion"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#9F9F9F"
+            android:textColorLink="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="311dp"
+            android:layout_marginEnd="187dp"
+            android:layout_marginRight="187dp"
+            android:onClick="editar"
+            android:text="guardar"
+            app:backgroundTint="#9C27B0"
+            app:cornerRadius="20dp"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="201dp"
+            android:layout_height="186dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="57dp"
+            android:layout_marginRight="57dp"
+            app:srcCompat="@drawable/logon" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

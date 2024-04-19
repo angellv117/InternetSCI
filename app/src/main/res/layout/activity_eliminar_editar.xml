@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".EliminarEditar">
+
+    <TextView
+        android:id="@+id/letrero5"
+        android:layout_width="188dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="right"
+        android:text="EDITAR NOTA"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="327dp"
+        android:layout_height="550dp"
+        android:background="@drawable/styles_layouts"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="283dp"
+            android:layout_height="268dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/logon" />
+
+        <EditText
+            android:id="@+id/nomPenEE"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/imageView9"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/estilo_edit"
+            android:drawableLeft="@drawable/pendiente_icon"
+            android:drawablePadding="12dp"
+            android:hint="Pendiente"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#9F9F9F"
+            android:textColorLink="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/descripcionPenEE"
+            android:layout_width="269dp"
+            android:layout_height="69dp"
+            android:layout_below="@id/nomPenEE"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/estilo_edit"
+            android:drawableLeft="@drawable/descripcion_icon"
+            android:drawablePadding="12dp"
+            android:hint="Descripción..."
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#9F9F9F"
+            android:textColorLink="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/editarEE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descripcionPenEE"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="18dp"
+            android:onClick="editar"
+            android:text="guardar"
+            app:backgroundTint="#9C27B0"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/eliminarEE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descripcionPenEE"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:onClick="eliminar"
+            android:text="Eliminar"
+            app:backgroundTint="#9C27B0"
+            app:cornerRadius="20dp" />
+
+        <EditText
+            android:id="@+id/montotextEE"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/imageView9"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/estilo_edit"
+            android:drawableLeft="@drawable/cambio_nombre_icon"
+            android:drawablePadding="12dp"
+            android:hint="Precio"
+            android:inputType="numberDecimal"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#9F9F9F"
+            android:textColorLink="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic">
+
+        </EditText>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
